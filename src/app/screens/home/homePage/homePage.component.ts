@@ -17,7 +17,11 @@ export class HomePageComponent implements OnInit {
   products!: Product[];
   selectedCategory: string = 'All Coffee';
   searchTerm: string = '';
-  filter!: filter;
+  filter: filter = {
+    price: 5,
+    state: '',
+    rating: '',
+  };
 
   ngOnInit(): void {
     this.productService.getProducts().subscribe((res) => {
