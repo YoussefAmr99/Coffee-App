@@ -1,0 +1,17 @@
+<body>
+  <app-location />
+  <app-search
+    (searchChanged)="onSearch($event)"
+    (onFilterApply)="onFilter($event)"
+  />
+  <app-promo />
+  <app-category-bar (onCategorySelected)="onCategorySelected($event)" />
+  <div class="productList">
+    <app-product
+      (onProductClick)="goToDetail($event)"
+      *ngFor="let product of filteredProducts"
+      [product]="product"
+    />
+  </div>
+  <app-footer (onTabChange)="onTabChanged($event)" />
+</body>

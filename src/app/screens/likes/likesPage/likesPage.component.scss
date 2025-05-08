@@ -1,0 +1,25 @@
+@import "../../../../styles.scss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+.likedItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: $body-color;
+}
+.item {
+  width: 100%;
+}
+.likedItems h1 {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  color: $title;
+  text-align: center;
+}

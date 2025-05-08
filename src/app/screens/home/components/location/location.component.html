@@ -1,0 +1,30 @@
+<div class="body">
+  <p>Location</p>
+  <div class="userLocation">
+    <h1>{{ selectedLocation }}</h1>
+    <button (click)="onLocationClick()">
+      <img src="icons/locationArrow.svg" alt="dropdown menu button" />
+    </button>
+  </div>
+</div>
+
+<div class="locationOverlay" *ngIf="isPopupOpen">
+  <div class="locationPopup">
+    <div class="popupHeader">
+      <h2>Select Location</h2>
+      <button (click)="onPopupClose()">
+        <img class="closeImage" src="icons/close.png" alt="close button" />
+      </button>
+    </div>
+    <div class="popup-content">
+      <ul class="location-list">
+        <li
+          *ngFor="let location of userLocations"
+          (click)="onLocationSelect(location)"
+        >
+          {{ location }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

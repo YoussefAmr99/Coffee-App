@@ -1,0 +1,30 @@
+@import "../../../../../styles.scss";
+
+.paymentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.paymentContainer h1 {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  color: $title;
+}
+.paymentDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row p {
+  font-family: $secondary-font;
+  font-size: calc($main-font-size * 0.875);
+  color: $dark-grey;
+}
+.row h2 {
+  font-family: $secondary-font;
+  font-size: calc($main-font-size * 0.875);
+}

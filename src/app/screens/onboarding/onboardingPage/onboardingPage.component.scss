@@ -1,0 +1,46 @@
+@import "../../../../styles.scss";
+
+body {
+  background-color: black;
+}
+body img {
+  width: 100%;
+  height: auto;
+}
+.lowerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7.4%;
+  background-color: black;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+  margin-top: -95px;
+  position: relative;
+}
+.gradientOverlay {
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+  margin-top: -80px;
+  position: relative;
+}
+.textSection {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.textSection h1 {
+  font-family: $main-font;
+  font-size: calc($main-font-size * 2);
+  line-height: 150%;
+  color: white;
+  padding-bottom: 0.5rem;
+}
+.textSection p {
+  font-family: $secondary-font;
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: $description;
+}
+.buttonSection {
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+@import "../../../../../styles.scss";
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.userLocation {
+  display: flex;
+}
+p {
+  font-family: $secondary-font;
+  font-size: calc(0.75 * $main-font-size);
+  color: $description;
+}
+h1 {
+  font-family: $main-font;
+  font-size: calc(0.875 * $main-font-size);
+  color: #d8d8d8;
+}
+button {
+  background: none;
+  border: none;
+}
+
+li {
+  font-family: $secondary-font;
+  font-size: calc(0.75 * $main-font-size);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+li:hover {
+  color: $main-color;
+  text-decoration: underline;
+}

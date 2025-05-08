@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: white;
+}
+.maps {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/maps.svg");
+  background-position: center;
+  background-size: cover;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

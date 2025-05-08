@@ -1,0 +1,33 @@
+<div class="item">
+  <img class="itemImage" [src]="product.imageUrl" alt="{{ product.name }}" />
+  <div class="detailsSection">
+    <div class="details">
+      <div class="detailsLeftSection">
+        <div class="detailsText">
+          <h1>{{ product.name }}</h1>
+          <p>{{ product.state }}</p>
+        </div>
+        <div class="ratingSection">
+          <img src="icons/star.svg" alt="star" />
+          <h2 class="rating">{{ product.rating }}</h2>
+          <span>({{ product.ratingCount }})</span>
+        </div>
+      </div>
+      <div class="detailsSuperiority">
+        <img src="icons/bike.svg" alt="Fast Delivery" />
+        <img src="icons/bean.svg" alt="Quality Bean" />
+        <img src="icons/milk.svg" alt="Extra Milk" />
+      </div>
+    </div>
+    <hr />
+  </div>
+  <div class="descriptionSection">
+    <h1>Description</h1>
+    <p>
+      {{ isExpanded ? product.longDescription : shortDescription }}
+      <span (click)="toggleDescription()" class="readMore">
+        {{ isExpanded ? " Read less" : " Read More" }}</span
+      >
+    </p>
+  </div>
+</div>

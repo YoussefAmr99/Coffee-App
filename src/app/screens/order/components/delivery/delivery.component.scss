@@ -1,0 +1,121 @@
+@import "../../../../../styles.scss";
+
+.type {
+  display: flex;
+  background-color: #ededed;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+.typeButton {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  font-size: $main-font-size;
+  font-family: $main-font;
+  border-radius: 0.5rem;
+  color: $dark-grey;
+  border: none;
+  cursor: pointer;
+}
+.selected {
+  background-color: $main-color;
+  font-weight: 500;
+  color: white;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.address h1 {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  color: $dark-grey;
+}
+.userAddress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.userAddress h2 {
+  font-family: $secondary-font;
+  font-size: calc($main-font-size * 0.875);
+  color: $dark-grey;
+}
+.userAddress p {
+  font-family: $secondary-font;
+  font-size: $secondary-font-size;
+  color: $description;
+}
+.addressButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+.addressButtons button {
+  padding: 0.375rem 0.875rem 0.375rem 0.874rem;
+  display: flex;
+  gap: 0.2rem;
+  color: $dark-grey;
+  border-radius: 1rem;
+  border: 1px solid $dark-grey;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: calc(0.75 * $main-font-size);
+}
+button {
+  cursor: pointer;
+}
+.noteInput {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid $dark-grey;
+  font-family: $secondary-font;
+  font-size: $secondary-font-size;
+  color: $title;
+}
+.locationPopup {
+  align-items: center;
+}
+form {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+label {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  font-weight: 500;
+  color: $title;
+}
+select {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+option {
+  font-family: $secondary-font;
+  font-size: $secondary-font-size;
+  color: $title;
+}
+.popupHeader {
+  align-items: center;
+}
+.mainButton {
+  border: none;
+  background-color: $main-color;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  font-weight: 500;
+  color: $light-grey;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}

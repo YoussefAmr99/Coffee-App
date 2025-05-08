@@ -1,0 +1,19 @@
+<div class="footerContainer">
+  <div class="priceSection">
+    <p>Price</p>
+    <h1>{{ productPrice | currency }}</h1>
+  </div>
+  <app-main-button
+    *ngIf="!inCart"
+    (buttonClick)="onBuyNowClick()"
+    class="button"
+    text="Buy Now"
+  ></app-main-button>
+  <app-quantity
+    [quantity]="quantity"
+    (plusOne)="addToCart()"
+    (minusOne)="removeFromCart()"
+    (removeItem)="removeItem()"
+    *ngIf="inCart"
+  />
+</div>

@@ -1,0 +1,25 @@
+@import "../../../../styles.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.leftSection {
+  display: flex;
+  justify-content: space-between;
+  width: 57%;
+}
+h1 {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  color: #242424;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.likes {
+  width: 24px;
+  height: 24px;
+}

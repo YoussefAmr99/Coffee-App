@@ -1,0 +1,24 @@
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.375rem;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.175rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  margin-left: -2rem;
+}

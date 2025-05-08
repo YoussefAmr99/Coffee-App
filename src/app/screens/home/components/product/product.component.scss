@@ -1,0 +1,70 @@
+@import "../../../../../styles.scss";
+
+.product {
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem 0.5rem 0.75rem 0.5rem;
+}
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+.name {
+  color: $title;
+  font-family: $main-font;
+  font-size: $main-font-size;
+}
+.description {
+  color: $description;
+  font-family: $secondary-font;
+  font-size: $secondary-font-size;
+}
+.priceAndAddButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.imageAndRating {
+  align-self: center;
+  position: relative;
+}
+.coffeeImage {
+  border-radius: 0.75rem;
+  position: relative;
+  width: 100%;
+}
+.rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.ratingDetails {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+  font-family: $secondary-font;
+  font-size: 0.5rem;
+  color: white;
+}
+.addButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.price {
+  font-family: $main-font;
+  font-size: $main-font-size;
+}
+.quantityComponent {
+  padding-top: 5px;
+  padding-bottom: 3px;
+}

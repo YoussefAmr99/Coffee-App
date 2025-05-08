@@ -1,0 +1,58 @@
+<div class="searchContainer">
+  <input
+    [(ngModel)]="searchTerm"
+    (ngModelChange)="onSearchChange($event)"
+    type="text"
+    placeholder="Search coffee"
+    class="searchBar"
+  />
+  <div class="filterContainer">
+    <button class="filterButton" (click)="toggleDropDown()">
+      <img src="icons/filterButton.svg" alt="filter button" />
+    </button>
+
+    <form
+      *ngIf="isDropdownOpen"
+      #filterForm="ngForm"
+      (ngSubmit)="applyFilters()"
+    >
+      <div class="filterGroup">
+        <label for="price">Price</label>
+        <input
+          type="range"
+          min="1"
+          max="5"
+          name="price"
+          [(ngModel)]="filters.price"
+        />
+        <span>{{ filters.price | currency }}</span>
+      </div>
+
+      <div class="filterGroup">
+        <label for="state">State</label>
+        <select name="state" [(ngModel)]="filters.state">
+          <option value="">All</option>
+          <option value="Hot">Hot</option>
+          <option value="Ice">Ice</option>
+        </select>
+      </div>
+
+      <div class="filterGroup">
+        <label for="rating">Rating</label>
+        <select name="rating" [(ngModel)]="filters.rating">
+          <option value="">Any</option>
+          <option *ngFor="let r of [5, 4, 3, 2, 1]" value="{{ r }}">
+            {{ r }}+
+          </option>
+        </select>
+      </div>
+
+      <div class="filterAction">
+        <button class="mainButton" type="submit">Apply</button>
+        <button class="secondaryButton" type="button" (click)="clearFilters()">
+          Clear
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

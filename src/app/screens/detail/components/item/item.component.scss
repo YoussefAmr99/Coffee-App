@@ -1,0 +1,89 @@
+@import "../../../../../styles.scss";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.itemImage {
+  align-self: center;
+  border-radius: 1rem;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.detailsLeftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.detailsText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.detailsText h1 {
+  font-family: $main-font;
+  font-size: calc($main-font-size * 1.25);
+}
+.detailsText p {
+  font-family: $secondary-font;
+  font-size: calc($secondary-font-size * 1.5);
+  color: $description;
+}
+.ratingSection {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.ratingSection img {
+  width: 20px;
+}
+.rating {
+  font-family: $main-font;
+  font-size: calc($main-font-size);
+}
+span {
+  font-family: $secondary-font;
+  font-size: calc($secondary-font-size);
+  color: $description;
+}
+.detailsSuperiority {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.detailsSuperiority img {
+  background-color: #ededed;
+  border-radius: 0.75rem;
+  padding: 0.375rem;
+  width: 44px;
+}
+
+.descriptionSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.descriptionSection h1 {
+  font-family: $main-font;
+  font-size: calc($main-font-size);
+}
+.descriptionSection p {
+  font-family: $secondary-font;
+  font-size: calc(0.875 * $main-font-size);
+  color: $description;
+}
+.readMore {
+  color: $main-color;
+  font-family: $main-font;
+  font-weight: 700;
+  cursor: pointer;
+}

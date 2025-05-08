@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Espresso",
+    "description": "A strong and bold coffee shot.",
+    "imageUrl": "images/coffeeOne.svg",
+    "price": 2.99,
+    "rating": 4.5,
+    "category": "Espresso",
+    "ratingCount": 120,
+    "state": "Hot",
+    "longDescription": "Espresso is a concentrated coffee brewed by forcing hot water through finely-ground coffee beans. It's the base for many coffee drinks."
+  },
+  {
+    "id": 2,
+    "name": "Cappuccino",
+    "description": "Coffee with steamed milk.",
+    "imageUrl": "images/coffeeTwo.svg",
+    "price": 3.99,
+    "rating": 4.7,
+    "category": "Latte",
+    "ratingCount": 95,
+    "state": "Hot",
+    "longDescription": "Cappuccino is a popular coffee drink made with equal parts espresso, steamed milk, and milk foam, offering a rich and creamy flavor."
+  },
+  {
+    "id": 3,
+    "name": "Latte",
+    "description": "Coffee with steamed milk.",
+    "imageUrl": "images/coffeeThree.svg",
+    "price": 4.49,
+    "rating": 4.6,
+    "category": "Latte",
+    "ratingCount": 110,
+    "state": "Hot",
+    "longDescription": "Latte is a coffee drink made with espresso and steamed milk, offering a smooth and creamy texture with a mild coffee flavor."
+  },
+  {
+    "id": 4,
+    "name": "Mocha",
+    "description": "chocolate flavored coffee.",
+    "imageUrl": "images/coffeeFour.svg",
+    "price": 4.99,
+    "rating": 1.8,
+    "category": "coffee",
+    "ratingCount": 85,
+    "state": "Ice",
+    "longDescription": "Mocha is a delightful coffee drink that combines espresso, steamed milk, and chocolate syrup, topped with whipped cream for a sweet treat."
+  },
+  {
+    "id": 5,
+    "name": "Iced Coffee",
+    "description": "Cold cup of coffee.",
+    "imageUrl": "images/coffeeFive.svg",
+    "price": 3.49,
+    "rating": 2.3,
+    "category": "coffee",
+    "ratingCount": 70,
+    "state": "Ice",
+    "longDescription": "Iced Coffee is a chilled coffee beverage made by brewing coffee and serving it over ice, perfect for a refreshing pick-me-up."
+  },
+  {
+    "id": 6,
+    "name": "Macchiato",
+    "description": "Espresso with extra foam.",
+    "imageUrl": "images/coffeeTwo.svg",
+    "price": 3.79,
+    "rating": 3.4,
+    "category": "Macchiato",
+    "ratingCount": 65,
+    "state": "Hot",
+    "longDescription": "Macchiato is a strong espresso drink topped with a small amount of milk foam, offering a bold and rich coffee experience."
+  }
+]

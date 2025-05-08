@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="orderDetails">
+    <img [src]="product.imageUrl" alt="product image" />
+    <div class="productDetails">
+      <h1>{{ product.name }}</h1>
+      <p>{{ product.description }}</p>
+    </div>
+  </div>
+  <app-quantity
+    *ngIf="!removeCount"
+    [quantity]="quantity"
+    (plusOne)="addToCart()"
+    (minusOne)="removeFromCart()"
+    (removeItem)="removeItem()"
+  ></app-quantity>
+</div>

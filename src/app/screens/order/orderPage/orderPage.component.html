@@ -1,0 +1,23 @@
+<body>
+  <app-header title="Order"></app-header>
+  <app-delivery
+    (addNote)="onSaveNote($event)"
+    (onTypeClick)="onSelectDeliveryType($event)"
+  ></app-delivery>
+  <hr />
+  <app-order-item
+    *ngFor="let item of items"
+    [product]="item.product"
+    [quantity]="item.quantity"
+  />
+  <div class="lineDivider"></div>
+  <app-payment
+    [type]="deliveryType"
+    [deliveryFee]="deliveryFees"
+    (totalFees)="cartTotalFees($event)"
+  ></app-payment>
+</body>
+<app-method
+  (onOrderClick)="goToDelivery()"
+  [totalPrice]="totalFees"
+></app-method>

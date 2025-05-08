@@ -1,0 +1,30 @@
+@import "../../../../../styles.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+}
+.orderDetails {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.orderDetails img {
+  width: 27%;
+  border-radius: 0.5rem;
+}
+.productDetails h1 {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  color: $title;
+}
+.productDetails p {
+  font-family: $secondary-font;
+  font-size: $secondary-font-size;
+  color: $description;
+}

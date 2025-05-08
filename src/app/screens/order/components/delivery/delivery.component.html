@@ -1,0 +1,64 @@
+<div class="type">
+  <button
+    (click)="onTypeChange('Delivery')"
+    class="typeButton"
+    [class.selected]="typeSelected === 'Delivery'"
+  >
+    Deliver
+  </button>
+  <button
+    (click)="onTypeChange('Pick Up')"
+    class="typeButton"
+    [class.selected]="typeSelected === 'Pick Up'"
+  >
+    Pick Up
+  </button>
+</div>
+<div class="address">
+  <div class="text">
+    <h1>{{ typeSelected }} Address</h1>
+    <div class="userAddress">
+      <h2>{{ mainAddress }}</h2>
+      <p>{{ subAddress }}</p>
+    </div>
+  </div>
+
+  <div class="addressButtons">
+    <button (click)="togglePopup(true)" *ngIf="typeSelected === 'Delivery'">
+      <img src="icons/edit.svg" alt="edit address button" />
+      Edit Address
+    </button>
+    <button (click)="toggleNote()">
+      <img src="icons/note.svg" alt="add note button" />
+      {{ isAddingNote ? "Save Note" : "Add Note" }}
+    </button>
+  </div>
+  <div class="userAddress" *ngIf="!isAddingNote; else editMode">
+    <h1 *ngIf="note">Note</h1>
+    <p>{{ note }}</p>
+  </div>
+  <ng-template #editMode>
+    <input
+      class="noteInput"
+      type="text"
+      placeholder="Add your note here!"
+      [(ngModel)]="note"
+    />
+  </ng-template>
+</div>
+
+<div class="locationOverlay" *ngIf="isEditingAddress">
+  <div class="locationPopup">
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+      <div class="popupHeader">
+        <label for="location">Select Location</label>
+        <select [(ngModel)]="selectedOption" name="location">
+          <option [ngValue]="'Cairo, Egypt'">Cairo,Egypt</option>
+          <option [ngValue]="'New York, USA'">New York, USA</option>
+          <option [ngValue]="'London, UK'">London, UK</option>
+        </select>
+      </div>
+      <button type="submit" class="mainButton">Submit</button>
+    </form>
+  </div>
+</div>

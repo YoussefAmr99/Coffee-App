@@ -1,0 +1,17 @@
+@import "../../../../styles.scss";
+
+.quantityContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.quantityContainer h1 {
+  font-family: $main-font;
+  font-size: calc($main-font-size * 0.875);
+  color: $title;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

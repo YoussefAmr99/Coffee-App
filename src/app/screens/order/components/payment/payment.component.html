@@ -1,0 +1,13 @@
+<div class="paymentContainer">
+  <h1>Payment Summary</h1>
+  <div class="paymentDetails">
+    <div class="row">
+      <p>Price</p>
+      <h2>{{ cartTotalPrice | currency }}</h2>
+    </div>
+    <div *ngIf="type === 'Delivery'" class="row">
+      <p>Delivery Fee</p>
+      <h2>{{ deliveryFee | currency }}</h2>
+    </div>
+  </div>
+</div>

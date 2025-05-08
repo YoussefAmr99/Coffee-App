@@ -1,0 +1,27 @@
+@import "../../../../../styles.scss";
+
+.categoryScrollContainer {
+  overflow-x: auto;
+  white-space: nowrap;
+  .categoryList {
+    display: flex;
+    gap: 1rem;
+  }
+  .categoryItem {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: $secondary-color;
+    cursor: pointer;
+    font-family: $main-font;
+    font-size: calc(0.875 * $main-font-size);
+    white-space: nowrap;
+
+    &.selected {
+      background-color: $main-color;
+      color: white;
+    }
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}

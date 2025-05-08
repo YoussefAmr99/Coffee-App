@@ -1,0 +1,16 @@
+<body>
+  <app-header
+    [isLiked]="isLiked"
+    (toggleLike)="toggleLike($event)"
+    title="Detail"
+  ></app-header>
+  <app-item *ngIf="item" [product]="item"></app-item>
+</body>
+<app-purchase
+  *ngIf="item"
+  (onBuyNow)="addToCart()"
+  (plusOne)="addToCart()"
+  (minusOne)="removeFromCart()"
+  [productPrice]="item.price"
+  [quantity]="quantity"
+></app-purchase>

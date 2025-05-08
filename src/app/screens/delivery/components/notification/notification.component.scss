@@ -1,0 +1,41 @@
+@import "../../../../../styles.scss";
+
+body {
+  border: 1px solid $light-grey;
+  border-radius: 0.875rem;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0 0.5rem 0.75rem;
+  margin-bottom: 0.875rem;
+}
+.deliveryImage {
+  padding: 0.375rem;
+  border: 1px solid $light-grey;
+  border-radius: 0.75rem;
+  width: 56px;
+  height: 56px;
+}
+.deliveryImage img {
+  width: 44px;
+  height: 44px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.text h1 {
+  font-family: $main-font;
+  font-size: calc(0.875 * $main-font-size);
+  color: $title;
+}
+.text p {
+  font-family: $secondary-font;
+  font-size: $secondary-font-size;
+  color: $description;
+}
+.noteDiv {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}

@@ -1,0 +1,16 @@
+@import "../../../../styles.scss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(to right, #313131, #111111) top / 100% 250px
+      no-repeat,
+    $body-color;
+}
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}

@@ -1,0 +1,14 @@
+@import "../../../../styles.scss";
+
+.mainButton {
+  width: 100%;
+  border-radius: 1rem;
+  background-color: $main-color;
+  color: $secondary-color;
+  font-family: $main-font;
+  font-weight: 500;
+  border-color: transparent;
+  padding: 1rem;
+  font-size: $main-font-size;
+  cursor: pointer;
+}

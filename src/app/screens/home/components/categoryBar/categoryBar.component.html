@@ -1,0 +1,12 @@
+<div class="categoryScrollContainer">
+  <div class="categoryList">
+    <div
+      *ngFor="let category of categories"
+      class="categoryItem"
+      [class.selected]="category.name === selectedCategory"
+      (click)="onCategorySelect(category.name)"
+    >
+      {{ category.name }}
+    </div>
+  </div>
+</div>

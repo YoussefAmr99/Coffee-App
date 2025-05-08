@@ -1,0 +1,52 @@
+@import "../../../../../styles.scss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.125rem;
+}
+.text h1 {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  color: $title;
+}
+.text span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.text span p {
+  font-family: $secondary-font;
+  font-size: $secondary-font-size;
+  color: $description;
+}
+.text span h2 {
+  font-family: $secondary-font;
+  font-size: $secondary-font-size;
+  color: $title;
+}
+.progressBar {
+  display: flex;
+  gap: 0.66rem;
+  width: 100%;
+}
+.part {
+  width: 25%;
+  height: 4px;
+  border-radius: 1.25rem;
+  background-color: $light-grey;
+}
+.part.filled {
+  background-color: #36c07e;
+}
+.indicator {
+  padding-bottom: 1rem;
+}

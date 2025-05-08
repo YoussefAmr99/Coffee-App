@@ -1,0 +1,9 @@
+@import "../../../../styles.scss";
+
+body {
+  padding: 2rem;
+  background: $body-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

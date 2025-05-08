@@ -1,0 +1,97 @@
+@import "../../../../../styles.scss";
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.searchBar {
+  background-color: #2a2a2a;
+  background-image: url("../../../../../../public/icons/search.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 2rem;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+  font-family: $secondary-font;
+  font-size: calc(0.875 * $main-font-size);
+  color: white;
+  height: 6.3vh;
+  &:focus {
+    outline: none;
+  }
+}
+.filterButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filterContainer {
+  position: relative;
+  display: inline-block;
+}
+form {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.6rem;
+  border-radius: 0.65rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  z-index: 1000;
+  border: 1px solid $body-color;
+  background-color: $body-color;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.filterGroup label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: $main-font;
+  font-size: calc(0.875 * $main-font-size);
+  color: $title;
+}
+.filterGroup input[type="range"] {
+  width: 100%;
+}
+.filterGroup span {
+  font-family: $secondary-font;
+  font-size: $secondary-font-size;
+  color: $dark-grey;
+  margin-top: 5px;
+}
+.filterGroup select {
+  padding: 0.375rem;
+  border-radius: 0.45rem;
+  border: 1px solid #ccc;
+}
+.filterAction {
+  display: flex;
+  gap: 0.25rem;
+  text-align: right;
+}
+.filterAction button {
+  font-family: $main-font;
+  font-size: $secondary-font-size;
+  font-weight: 500;
+  padding: 0.5rem 0.875rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+.mainButton {
+  background-color: $main-color;
+  color: $background-color;
+}
+.secondaryButton {
+  background-color: $background-color;
+  color: $main-color;
+}

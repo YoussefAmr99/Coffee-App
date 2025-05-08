@@ -1,0 +1,14 @@
+<div class="footerContainer">
+  <div class="methods">
+    <div class="payment">
+      <img src="icons/wallet.svg" alt="wallet icon" />
+      <div class="paymentText">
+        <h1>Cash/Wallet</h1>
+        <h2>{{ totalPrice | currency }}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="orderButton">
+    <app-main-button (buttonClick)="onOrder()" text="Order"></app-main-button>
+  </div>
+</div>

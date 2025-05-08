@@ -1,0 +1,36 @@
+<div class="product">
+  <div class="imageAndRating" (click)="onProductSelect()">
+    <img class="coffeeImage" [src]="product.imageUrl" alt="coffee image" />
+    <div class="rating">
+      <img src="icons/ratingBackground.svg" alt="rating" />
+      <div class="ratingDetails">
+        <img src="icons/star.svg" alt="star" />
+        <p>{{ product.rating }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="productDetails">
+    <div (click)="onProductSelect()">
+      <h1 class="name">{{ product.name }}</h1>
+      <p class="description">{{ product.description }}</p>
+    </div>
+    <div class="priceAndAddButton">
+      <h1 class="price">{{ product.price | currency }}</h1>
+      <button
+        *ngIf="!quantityChange"
+        (click)="toggleQuantityChange('add')"
+        class="addButton"
+      >
+        <img src="icons/plus.svg" alt="add to card icon" />
+      </button>
+      <app-quantity
+        class="quantityComponent"
+        *ngIf="quantityChange"
+        [quantity]="quantity"
+        (plusOne)="addToCart()"
+        (minusOne)="removeFromCart()"
+        (removeItem)="toggleQuantityChange('remove')"
+      ></app-quantity>
+    </div>
+  </div>
+</div>
