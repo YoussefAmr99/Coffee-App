@@ -1,4 +1,4 @@
-<div class="type">
+<section class="type">
   <button
     (click)="onTypeChange('Delivery')"
     class="typeButton"
@@ -13,8 +13,8 @@
   >
     Pick Up
   </button>
-</div>
-<div class="address">
+</section>
+<section class="address">
   <div class="text">
     <h1>{{ typeSelected }} Address</h1>
     <div class="userAddress">
@@ -45,9 +45,9 @@
       [(ngModel)]="note"
     />
   </ng-template>
-</div>
+</section>
 
-<div class="locationOverlay" *ngIf="isEditingAddress">
+<section class="locationOverlay" *ngIf="isEditingAddress">
   <div class="locationPopup">
     <form (ngSubmit)="onSubmit()" #form="ngForm">
       <div class="popupHeader">
@@ -61,4 +61,4 @@
       <button type="submit" class="mainButton">Submit</button>
     </form>
   </div>
-</div>
+</section>

@@ -1,6 +1,6 @@
-<div class="item">
+<main class="item">
   <img class="itemImage" [src]="product.imageUrl" alt="{{ product.name }}" />
-  <div class="detailsSection">
+  <section class="detailsSection">
     <div class="details">
       <div class="detailsLeftSection">
         <div class="detailsText">
@@ -20,14 +20,14 @@
       </div>
     </div>
     <hr />
-  </div>
-  <div class="descriptionSection">
-    <h1>Description</h1>
+  </section>
+  <section class="descriptionSection">
+    <h3>Description</h3>
     <p>
       {{ isExpanded ? product.longDescription : shortDescription }}
       <span (click)="toggleDescription()" class="readMore">
         {{ isExpanded ? " Read less" : " Read More" }}</span
       >
     </p>
-  </div>
-</div>
+  </section>
+</main>

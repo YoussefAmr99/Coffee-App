@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { filter } from '../../../../shared/interfaces/filter';
 
 @Component({
@@ -7,7 +7,7 @@ import { filter } from '../../../../shared/interfaces/filter';
   templateUrl: './search.component.html',
   styleUrl: './search.component.scss',
 })
-export class SearchComponent {
+export class SearchComponent implements OnInit {
   searchTerm!: string;
   isDropdownOpen: boolean = false;
   filters: filter = {
@@ -17,6 +17,10 @@ export class SearchComponent {
   };
   @Output() searchChanged = new EventEmitter<string>();
   @Output() onFilterApply = new EventEmitter<filter>();
+
+  ngOnInit(): void {
+    this.clearFilters();
+  }
 
   onSearchChange(value: string): void {
     this.searchChanged.emit(value.trim());

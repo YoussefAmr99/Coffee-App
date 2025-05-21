@@ -1,19 +1,18 @@
-<div class="footerContainer">
-  <button *ngFor="let tab of tabs" (click)="onTabClick(tab.name)">
-    <img
-      *ngIf="selectedTab !== tab.name"
-      [src]="'icons/' + tab.icon + '.svg'"
-      alt="{{ tab.name }}"
-    />
-    <img
-      *ngIf="selectedTab === tab.name"
-      [src]="'icons/' + tab.icon + 'Selected.svg'"
-      alt="{{ tab.name }}"
-    />
-    <img
-      *ngIf="selectedTab === tab.name"
-      src="icons/dot.svg"
-      alt="selected indicator"
-    />
-  </button>
-</div>
+<footer>
+  <ul class="footerContainer">
+    <li *ngFor="let tab of tabs">
+      <button (click)="onTabClick(tab.name)">
+        <img
+          *ngIf="selectedTab !== tab.name"
+          [src]="'icons/' + tab.icon + '.svg'"
+          alt="{{ tab.name }}"
+        />
+        <img
+          *ngIf="selectedTab === tab.name"
+          [src]="'icons/' + tab.icon + 'Selected.svg'"
+          alt="{{ tab.name }}"
+        />
+      </button>
+    </li>
+  </ul>
+</footer>

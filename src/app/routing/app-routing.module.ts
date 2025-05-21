@@ -2,10 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { OnboardingPageComponent } from '../screens/onboarding/onboardingPage/onboardingPage.component';
 import { HomePageComponent } from '../screens/home/homePage/homePage.component';
-import { OrderPageComponent } from '../screens/order/orderPage/orderPage.component';
-import { DetailPageComponent } from '../screens/detail/detailPage/detailPage.component';
-import { DeliveryPageComponent } from '../screens/delivery/deliveryPage/deliveryPage.component';
-import { LikesPageComponent } from '../screens/likes/likesPage/likesPage.component';
 import { existGuard } from '../screens/detail/guard/exist.guard';
 
 const routes: Routes = [

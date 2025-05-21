@@ -1,16 +1,16 @@
-<div>
-  <div class="header">
-    <div class="leftSection">
+<header>
+  <main class="header">
+    <section class="leftSection">
       <button (click)="onBackButtonClick()">
         <img src="icons/arrowLeft.svg" alt="back button" />
       </button>
       <h1>{{ title }}</h1>
-    </div>
+    </section>
     <button *ngIf="!isLiked && showLikesButton" (click)="toggleLikes('like')">
       <img src="icons/heart.svg" alt="add to likes button" />
     </button>
     <button *ngIf="isLiked && showLikesButton" (click)="toggleLikes('dislike')">
       <img class="likes" src="icons/liked.svg" alt="add to likes button" />
     </button>
-  </div>
-</div>
+  </main>
+</header>

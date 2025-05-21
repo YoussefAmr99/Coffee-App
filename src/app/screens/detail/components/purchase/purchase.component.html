@@ -1,8 +1,8 @@
-<div class="footerContainer">
-  <div class="priceSection">
+<main class="footerContainer">
+  <section class="priceSection">
     <p>Price</p>
     <h1>{{ productPrice | currency }}</h1>
-  </div>
+  </section>
   <app-main-button
     *ngIf="!inCart"
     (buttonClick)="onBuyNowClick()"
@@ -16,4 +16,4 @@
     (removeItem)="removeItem()"
     *ngIf="inCart"
   />
-</div>
+</main>

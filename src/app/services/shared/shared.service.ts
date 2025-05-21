@@ -35,7 +35,12 @@ export class SharedService {
   }
 
   getUserLocation(): string {
-    return this.userLocation || 'Cairo, Egypt.';
+    if (this.userLocation) {
+      return this.userLocation;
+    } else {
+      this.setLocation('Cairo, Egypt');
+      return this.userLocation;
+    }
   }
 
   getUserSubLocation(): string {

@@ -1,11 +1,11 @@
-<div class="container">
-  <div class="orderDetails">
+<main class="container">
+  <section class="orderDetails">
     <img [src]="product.imageUrl" alt="product image" />
     <div class="productDetails">
       <h1>{{ product.name }}</h1>
       <p>{{ product.description }}</p>
     </div>
-  </div>
+  </section>
   <app-quantity
     *ngIf="!removeCount"
     [quantity]="quantity"
@@ -13,4 +13,4 @@
     (minusOne)="removeFromCart()"
     (removeItem)="removeItem()"
   ></app-quantity>
-</div>
+</main>
