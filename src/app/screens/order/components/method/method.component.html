@@ -1,5 +1,5 @@
-<div class="footerContainer">
-  <div class="methods">
+<main class="footerContainer">
+  <section class="methods">
     <div class="payment">
       <img src="icons/wallet.svg" alt="wallet icon" />
       <div class="paymentText">
@@ -7,8 +7,8 @@
         <h2>{{ totalPrice | currency }}</h2>
       </div>
     </div>
-  </div>
+  </section>
   <div class="orderButton">
     <app-main-button (buttonClick)="onOrder()" text="Order"></app-main-button>
   </div>
-</div>
+</main>

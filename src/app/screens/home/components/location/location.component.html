@@ -1,12 +1,12 @@
-<div class="body">
+<main class="body">
   <p>Location</p>
-  <div class="userLocation">
+  <section class="userLocation">
     <h1>{{ selectedLocation }}</h1>
     <button (click)="onLocationClick()">
       <img src="icons/locationArrow.svg" alt="dropdown menu button" />
     </button>
-  </div>
-</div>
+  </section>
+</main>
 
 <div class="locationOverlay" *ngIf="isPopupOpen">
   <div class="locationPopup">

@@ -1,4 +1,4 @@
-<div class="searchContainer">
+<main class="searchContainer">
   <input
     [(ngModel)]="searchTerm"
     (ngModelChange)="onSearchChange($event)"
@@ -6,7 +6,7 @@
     placeholder="Search coffee"
     class="searchBar"
   />
-  <div class="filterContainer">
+  <section class="filterContainer">
     <button class="filterButton" (click)="toggleDropDown()">
       <img src="icons/filterButton.svg" alt="filter button" />
     </button>
@@ -54,5 +54,5 @@
         </button>
       </div>
     </form>
-  </div>
-</div>
+  </section>
+</main>

@@ -1,6 +1,6 @@
 <body>
   <app-header title="Likes" />
-  <div class="likedItems">
+  <section class="likedItems">
     <h1 *ngIf="likedItems.length === 0">Your Likes List Is Empty!</h1>
     <app-order-item
       [removeCount]="true"
@@ -9,5 +9,5 @@
       [product]="item"
       (click)="goToDetail(item.id)"
     ></app-order-item>
-  </div>
+  </section>
 </body>

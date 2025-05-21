@@ -1,17 +1,17 @@
 <body>
-  <div class="text">
+  <section class="text">
     <img class="indicator" src="icons/indicator.svg" alt="phone indicator" />
     <h1>{{ remainingTime }} minutes left</h1>
     <span
       ><p>Delivery to</p>
       <h2>{{ userLocation }}</h2>
     </span>
-  </div>
-  <div class="progressBar">
+  </section>
+  <section class="progressBar">
     <div
       class="part"
       *ngFor="let filled of progressParts"
       [class.filled]="filled"
     ></div>
-  </div>
+  </section>
 </body>
